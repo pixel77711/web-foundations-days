@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickNotes</title>
@@ -11,16 +10,20 @@
       <h1>QuickNotes</h1>
       <p>Capture ideas before they disappear.</p>
       <nav>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html">Home</a></li>
-        </nav>  
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </nav>
     </header>
- 
+
     <main>
       <section>
-        <h2>How to use QuickNotes</h2>
-        <p>QuickNotes is a simple note-taking app that allows you to quickly jot down your ideas and keep track of them. it helps you stay organized and ensures that you never forget important thoughts or tasks.</p>
-        <h2>How to use QuickNotes</h2>
+        <h2>how to use QuickNotes</h2>
+        <p>
+          QuickNotes is a simple note-taking app that allows you to quickly jot
+          down your ideas and keep track of them. it helps you stay organized
+          and ensures that you never forget important thoughts or tasks.
+        </p>
+        <h2>how to use quicknotes</h2>
         <ol>
           <li>Open the app and click on the "Add Note" button.</li>
           <li>Type your note in the input field that appears.</li>
@@ -30,7 +33,16 @@
         <ul>
           <li>add notes</li>
           <li>edit notes</li>
-          <li>save notes</li> 
+          <li>save notes</li>
+          <li>view notes</li>
+          <li>delete notes</li>
+          <li>Easy note organization</li>
+          <li>Search notes</li>
+        </ul>
+        <ul class="features">
+          <li>add notes</li>
+          <li>edit notes</li>
+          <li>save notes</li>
           <li>view notes</li>
           <li>delete notes</li>
           <li>Easy note organization</li>
@@ -39,7 +51,8 @@
         <h2>keyboard shortcuts</h2>
         <p>Here are some useful keyboard shortcuts for QuickNotes:</p>
         <ul>
-          <table> border="1">
+          <table>
+            border="1">
             <tr>
               <li><strong>Ctrl + N</strong> - Add a new note</li>
               <li><strong>Ctrl + S</strong> - Save the current note</li>
@@ -47,16 +60,30 @@
             </tr>
           </table>
           <h2>Send Feedback</h2>
-          <p>If you have any feedback or suggestions for QuickNotes, please reach out to us at <a href="mailto:feedback@quicknotes.com">feedback@quicknotes.com</a>.</p>
+          <p>
+            If you have any feedback or suggestions for QuickNotes, please reach
+            out to us at
+            <a href="mailto:feedback@quicknotes.com">feedback@quicknotes.com</a
+            >.
+          </p>
         </ul>
         <h2>Add a new note</h2>
-        <form id="note-form">
-          <label for="note-input">New note</label>
-          <input type="text" id="note-input" placeholder="Type a note..." />
-          <button type="submit">Add Note</button>
+        <form>
+          <label for="name ">Name:</label>
+          <input type="text" id="name " name="name" required />
+          <br /><br />
+
+          <label for="email ">Email:</label>
+          <input type="email" id="email " name="email" required />
+          <br /><br />
+
+          <label for="feedback">feedback:</label>
+          <textarea id="feedback" name="feedback" required></textarea>
+          <br /><br />
+          <input type="submit" value="Submit" />
         </form>
       </section>
- 
+
       <section>
         <h2>Your notes</h2>
         <p id="note-count">You have 2 notes.</p>
@@ -66,7 +93,7 @@
         </ul>
       </section>
     </main>
- 
+
     <footer>
       <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
     </footer>
