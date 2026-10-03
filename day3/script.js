@@ -69,7 +69,7 @@ function getSummary() {
 
   let word = notes.length === 1 ? "note" : "notes";
 
-return ${notes.length} ${word}: ${counts.personal} personal, ${counts.work} work, ${counts.study} study.;
+return `${notes.length} ${word}: ${counts.personal} personal, ${counts.work} work, ${counts.study} study.`;
 }
 
 // Tests for getSummary
