@@ -65,9 +65,9 @@ console.log(countByCategory().work);
 
 // 4. Get summary
 function getSummary() {
-let counts = countByCategory();
+  let counts = countByCategory();
 
-let word = notes.length === 1 ? "note" : "notes";
+  let word = notes.length === 1 ? "note" : "notes";
 
 return ${notes.length} ${word}: ${counts.personal} personal, ${counts.work} work, ${counts.study} study.;
 }
@@ -83,7 +83,7 @@ notes = [
 ];
 
 console.log(getSummary());
-// Expected: "1 note: 1 personal, 0 work, 0 study."
+
 
 notes = savedNotes;
 
@@ -98,7 +98,7 @@ note.text.trim().toLowerCase() === cleanedText
 
 // Tests for isDuplicate
 console.log(isDuplicate("Call mum"));
-// Expected: true
+
 
 console.log(isDuplicate(" CALL MUM "));
 // Expected: true
