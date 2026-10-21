@@ -87,3 +87,18 @@ filterInput.addEventListener("input", function () {
         status.textContent = `Showing ${filteredUsers.length} user(s).`;
     }
 });
+
+loadButton.addEventListener("click", loadUsers);
+
+filterInput.addEventListener("input", function () {
+    if (users.length === 0) {
+        return;
+    }
+
+    const filteredUsers = getFilteredUsers();
+    renderUsers(filteredUsers);
+
+    if (filteredUsers.length > 0) {
+        status.textContent = `Showing ${filteredUsers.length} user(s).`;
+    }
+});
